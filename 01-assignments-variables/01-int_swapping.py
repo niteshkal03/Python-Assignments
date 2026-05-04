@@ -1,5 +1,4 @@
- 
-# Q.1. Switch values of two integers
+ # Q.1. Switch values of two integers
 
 n1 = 20
 n2 = 30

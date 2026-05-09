@@ -9,7 +9,7 @@
 
 cost_price = int(input("Enter Your Cost Price : "))
 selling_price = int(input("Enter Your Selling Price : "))
-print("="*35)
+print("="*35) #Use for Alignment
 
 #Formula Used For Profit
 profit = selling_price - cost_price
@@ -28,7 +28,7 @@ elif selling_price < cost_price:
     #Loss Percentage
     loss_percentage = (loss / cost_price) * 100
     print(f"The Loss Percentage is (%): {loss_percentage}")
-    
+
 else:
     print("You have No Profit and No Loss !! ")
     print()

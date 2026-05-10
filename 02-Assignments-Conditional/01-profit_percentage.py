@@ -1,11 +1,5 @@
-# 1. Task: Calculate Profit Percentage 
-# ● Write a program that takes input for the cost price and selling price of an item. 
-# ● Hints 
-# ○ Prompt the user to input the cost price and selling price. 
-# ○ Determine whether the transaction resulted in a profit or loss. 
-# ○ If there is a profit calculate the profit percentage; if there is a loss 
-# calculate the loss percentage. 
-# # ○ Display the profit or loss and the respective percentage.
+# 1. Task: Calculate Profit Percentage  
+#Display the profit or loss and the respective percentage.
 
 cost_price = int(input("Enter Your Cost Price : "))
 selling_price = int(input("Enter Your Selling Price : "))

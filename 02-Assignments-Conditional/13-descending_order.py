@@ -15,4 +15,10 @@ first = int(input("Enter first number : "))
 second = int(input("Enter second number : "))
 third = int(input("Enter third number : "))
 
-# descending_order =
+
+numbers = [first, second, third]
+print(f"Given Numbers: {numbers}")
+
+numbers.sort(reverse=True)
+print(f"Descending Order: {numbers}")
+

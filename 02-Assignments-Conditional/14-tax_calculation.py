@@ -5,4 +5,6 @@
 # 3. Jaguar: 25% tax for prices between 15L and 20L. 
 # 4. Mercedes: 30% tax for prices between 20L and 25L. 
 # 5. Input: The car brand and price. 
-# 6. Output: The calculated tax on the purchase. 
+# 6. Output: The calculated tax on the purchase.
+ 
+print("Enter Car Brand : ")

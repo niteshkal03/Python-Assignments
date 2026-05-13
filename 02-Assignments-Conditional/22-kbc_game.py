@@ -1,32 +1,97 @@
 # 23.Create Your Own KBC Game 
-# Design and implement a quiz game inspired by the popular Kaun Banega Crorepati (KBC) 
-# game show. The aim of this assignment is to test the user's knowledge through a series of 
-# multiple-choice questions, track their score, and display statistics at the end of the game. The 
-# game also provides the flexibility to skip any question. 
-# Instructions: 
-# 1. Game Structure: 
-# ○ The game will consist of 5 multiple-choice questions. 
-# ○ The user will be asked a question with 4 options (A, B, C, D). 
-# ○ The user can choose to skip any question they do not want to answer. 
-# 2. Scoring System: 
-# ○ Points will be awarded for correct answers as follows: 
-# ■ Question 1 → 1000 points 
-# ■ Question 2 → 2000 points 
-# ■ Question 3 → 3000 points 
-# ■ Question 4 → 5000 points 
-# ■ Question 5 → 10000 points 
-# ○ For incorrect answers, no points will be awarded. 
-# ○ For skipped questions, no points will be awarded, but the game will continue. 
-# 3. End of Game Statistics: 
-# ○ At the end of the game, the following statistics will be displayed: 
-# ■ Total score accumulated from correct answers. 
-# ■ Number of correct answers provided by the user. 
-# ■ Number of skipped questions. 
-# ■ Number of wrong answers 
-# 4. User Experience: 
-# ○ At the beginning of the game, ask the user whether they would like to start or 
-# not the game. 
-# ○ Provide the option for the user to skip any question at any point.. 
-# 5. Game Ending: 
-# ○ The game will end when all the questions have been answered or skipped. The 
-# user should receive their total score and a summary of their performance.
+
+ask_usr = input("Would You Like the Start Game ?(start/not) : ")
+points = 0
+c_ans = 0
+w_ans = 0
+
+if ask_usr == "start":
+    print("------Let's Proceed.------")
+    print("""
+        1. Who developed Python Programming Language?
+        A. Wick van Rossum
+        B. Rasmus Lerdorf
+        C. Guido van Rossum
+        D. Niene Stom
+    """)
+    ans1 = input("   Ans :- ")
+    if ans1 == "C":
+        print("     Correct Answer !")
+        points = points + 1000
+        c_ans = c_ans + 1
+    else:
+        print("incorrect answers, no points will be awarded.!")
+        w_ans = w_ans + 1
+
+    print("""
+        2.Which of the following character is used to give single-line comments in Python?
+        A. //
+        B. #
+        C. !
+        D. /* 
+    """)
+    ans2 = input("   Ans :- ")
+    if ans2 == "B":
+        print("     Correct Answer !")
+        points = points + 2000
+        c_ans = c_ans + 1
+    else:
+        print("incorrect answers, no points will be awarded.!")
+        w_ans = w_ans + 1
+
+    print("""
+        3.Which of the following functions is a built-in function in python?
+        A. factorial()
+        B. print()
+        C. seed()
+        D. sqrt()
+    """)
+    ans3 = input("   Ans :- ")
+    if ans3 == "B":
+        print("     Correct Answer !")
+        points = points + 3000
+        c_ans = c_ans + 1
+    else:
+        print("incorrect answers, no points will be awarded.!")
+        w_ans = w_ans + 1
+
+    print("""
+        4. What is the return type of the id() function in Python?
+        A. int
+        B. float
+        C. bool
+        D. dict
+    """)
+    ans4 = input("   Ans :- ")
+    if ans4 == "A":
+        print("     Correct Answer !")
+        points = points + 5000
+        c_ans = c_ans + 1
+    else:
+        print("incorrect answers, no points will be awarded.!")
+        w_ans = w_ans + 1
+
+    print("""
+        5.Which keyword is used for function in Python language?
+        A. Function
+        B. def
+        C. Fun
+        D. Define
+    """)
+    ans5 = input("   Ans :- ")
+    if ans5 == "B":
+        print("     Correct Answer !")
+        points = points + 10000
+        c_ans = c_ans + 1
+    else:
+        print("incorrect answers, no points will be awarded.!")
+        w_ans = w_ans + 1
+
+    print(f"Total Score of Correct Answers : {points}")
+    print(f"Number of correct answers : {c_ans}")
+    print(f"Number of Wrong answers : {w_ans}")
+
+elif ask_usr == "not":
+    print("Ok, We will start Next Time.")
+else:
+    print("I didn't Understand What You Said")

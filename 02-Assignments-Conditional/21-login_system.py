@@ -34,11 +34,45 @@
 ph_no = "1234567890" 
 otp = "1234" 
 email = "user@example.com" 
-passwd = "password123"
+password = "password123"
 
-print("Login With Phone")
-ph_no = input("Enter Phone Number : ")
+print("""
+Predefined Credentials: 
+○ Phone number: "1234567890" 
+○ OTP: "1234" 
+○ Email: "user@example.com" 
+○ Password: "password123” """)
+print("="*27)
 
-print("Login with Email")
-print("Exit the system")
+print("""
+Option 1 : Login with Phone.
+Option 2 : Login with Email.
+Option 3 : Exit the System.
+""")
+
+options = input("Enter Your Choice-(like 1, 2, 3): ")
+if options == "1":
+    mob_no = input("Enter Phone Number : ")
+    otp1 = input("Enter Your OTP : ")
+
+    if mob_no == ph_no and otp1 == otp:
+        print("Login successful with phone!")
+    else:
+        print("Credentials Incorrect, Please Enter Correct!")
+
+elif options == "2":
+    email1 = input("Enter Phone Email : ")
+    passwd = input("Enter Your Password : ")
+
+    if email1 == email and passwd == password:
+        print("Login successful with Email!")
+    else:
+        print("Credentials Incorrect, Please Enter Correct!")
+
+elif options == "3":
+        print("Exiting the program. Have a nice day!")
+
+else:
+    print("Invalid Choice, Please Select a Valid Option!")
+
 

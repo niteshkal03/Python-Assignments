@@ -31,3 +31,14 @@
 # nice day!" 
 # 4. If the user enters invalid credentials or an invalid choice, display appropriate error 
 # messages.
+ph_no = "1234567890" 
+otp = "1234" 
+email = "user@example.com" 
+passwd = "password123"
+
+print("Login With Phone")
+ph_no = input("Enter Phone Number : ")
+
+print("Login with Email")
+print("Exit the system")
+

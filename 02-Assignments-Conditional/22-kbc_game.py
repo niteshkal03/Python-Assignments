@@ -12,16 +12,18 @@ if ask_usr == "yes":
         A. Wick van Rossum
         B. Rasmus Lerdorf
         C. Guido van Rossum
-        D. Niene Stom
+        D. Niene Storm
     """)
-    ans1 = input("""     Do You Want to Skip this Answer ? then type "skip" or Choose a Ans :- """)
+    # skip_ans = input("""     Do You Want to Skip this Answer ? then type "skip":- """)
+    ans1 = input("""     Choose Your a Ans :- """)
+
     if ans1 == "C":
         # print("     Correct Answer !")
         points = points + 1000
         c_ans = c_ans + 1
 
     elif ans1 == "skip":
-        sk_ans = sk_ans + 1
+         sk_ans = sk_ans + 1
 
     else:
         print("incorrect answers, no points will be awarded.!")
